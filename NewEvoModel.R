@@ -184,7 +184,7 @@ SIMULATION <- function(N = 100, MaxYear = 1000, h2 = 0.5, Vp = 1, mu = 10, P = 0
   #plot(values[,1])
   par(mfrow=c(1,2))
   plot(apply(Individuals[,"Phenotype",,drop = TRUE], MARGIN = 1, FUN = var))
-  plot(apply(Individuals[,"Genotype",,drop = TRUE], MARGIN = 1, FUN = var))
+  plot(apply(Individuals[,"Genetic",,drop = TRUE], MARGIN = 1, FUN = var))
   #return(mean(Individuals[,"Phenotype",Iyear]))
   print(Individuals[,,Iyear])
 }
