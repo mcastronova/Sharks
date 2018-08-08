@@ -17,9 +17,9 @@ REL_FITNESS <- function(X, Bf = 3, As = 5, Af = 2) # Function to calculate new m
   Fecundity 					   <- Af+Bf*X 	# Fecundity
   Fecundity[Fecundity<0] <- 0					# Check on sign
   X.Fitness  				     <- Fecundity # Fitness
-  mu							 <- mean(X.Fitness)
+  mu.fit							 <- mean(X.Fitness)
   #browser()
-  return(X.Fitness/mu)
+  return(X.Fitness/mu.fit)
 }	# End of relative fitness function
 
 ################## Function Growth ##################
